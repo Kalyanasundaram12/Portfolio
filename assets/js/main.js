@@ -88,4 +88,4 @@ sr.reveal(".qualification__footer-text, .contact__content", {
   origin: "left",
 });
 
-sr.reveal(".qualification__footer .btn, .contact__btn", { origin: "right" });
+ sr.reveal(".qualification__footer .btn, .contact__btn", { origin: "right" });
