@@ -1,2 +1,2 @@
 # Portfolio
-My personal Portfolio
+Get to know more about me
