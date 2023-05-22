@@ -1,49 +1,41 @@
 :root {
-  /* Colors
-  ____________________*/
-  --color-primary: #25ab75;
-  --color-primary-dark: #208c61;
+
+  --color-primary: orange;
+  --color-primary-dark: orange;
   --color-bg-primary: #1a1a1a;
   --color-bg-secondary: #242424;
   --color-bg-footer: #151515;
   --color-white: #ffffff;
   --color-text: #676767;
   --color-border: #373737;
-
-  /* Font & Typography
-  ___________________*/
   --ff-body: "Space Grotesk", sans-serif;
-  /* font sizes */
   --fs-sm: 1.4rem;
   --fs-md: 1.6rem;
   --fs-lg: 2rem;
   --fs-xl: 2.4rem;
   --fs-xxl: 3.2rem;
   --fs-biggest: clamp(3rem, 8vw, 5rem);
-  /* font weight */
+
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
 
-  /* z-index
-  ___________________*/
+
   --zindex-menu: 1000;
   --zindex-fixed: 1010;
 
-  /* With & Height 
-  ------------------*/
+
   --width-container: 98rem;
   --height-header: 10rem;
   --height-header--scroll: 8rem;
 
-  /* Transition and box shadow*/
+
   --transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS Reset
---------------------------------------------------------------*/
+
 *,
 *::before,
 *::after {
@@ -103,8 +95,7 @@ body {
   line-height: 1.2;
 }
 
-/* Reusable CSS
---------------------------------------------------------------*/
+
 .container {
   width: 90%;
   max-width: var(--width-container);
@@ -174,8 +165,7 @@ body {
   color: var(--color-white);
 }
 
-/* Header
---------------------------------------------------------------*/
+
 .header {
   background-color: var(--color-bg-primary);
   position: fixed;
@@ -274,8 +264,7 @@ body {
   }
 }
 
-/* Hero
---------------------------------------------------------------*/
+
 .hero__wrapper {
   min-height: calc(100vh - var(--height-header));
   padding: 5rem 0;
@@ -335,8 +324,7 @@ body {
   }
 }
 
-/* About
---------------------------------------------------------------*/
+
 .about__content {
   max-width: 50rem;
   margin: auto;
@@ -388,8 +376,6 @@ body {
   color: var(--color-primary);
 }
 
-/* Qualification
---------------------------------------------------------------*/
 .qualification__wrapper {
   margin-bottom: 5rem;
 }
@@ -436,8 +422,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Services
---------------------------------------------------------------*/
 .service__card {
   background-color: var(--color-bg-secondary);
   box-shadow: var(--box-shadow);
@@ -467,8 +451,7 @@ body {
   margin-bottom: 3rem;
 }
 
-/* Projects
---------------------------------------------------------------*/
+
 .project__content {
   width: 100%;
   max-width: 30rem;
@@ -504,8 +487,6 @@ body {
   column-gap: 1rem;
 }
 
-/* Testimonials
---------------------------------------------------------------*/
 .testimonial__card {
   background-color: var(--color-bg-secondary);
   box-shadow: var(--box-shadow);
@@ -538,7 +519,6 @@ body {
   font-size: var(--fs-sm);
 }
 
-/* testimonial slide */
 .testimonial__wrapper .swiper-wrapper {
   padding-bottom: 5rem;
 }
@@ -558,8 +538,6 @@ body {
   background-color: var(--color-primary);
 }
 
-/* Contact
---------------------------------------------------------------*/
 .contact__wrapper {
   border-top: 1px solid var(--color-border);
   padding-top: 3rem;
@@ -580,8 +558,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Footer
---------------------------------------------------------------*/
 .footer {
   background-color: var(--color-bg-footer);
   padding: 5rem 0;
@@ -628,8 +604,6 @@ body {
   padding-top: 3rem;
 }
 
-/* Scrollbar
---------------------------------------------------------------*/
 ::-webkit-scrollbar {
   width: 1rem;
   border-radius: 0.5rem;
@@ -645,10 +619,7 @@ body {
   background-color: var(--color-primary);
 }
 
-/* Breakpoints
---------------------------------------------------------------*/
 
-/* Medium devices*/
 @media screen and (min-width: 560px) {
   .service__wrapper {
     grid-template-columns: repeat(2, 250px);
@@ -704,8 +675,6 @@ body {
   }
 }
 
-/* Large devices */
-
 @media screen and (min-width: 968px) {
   .about__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -741,3 +710,4 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
